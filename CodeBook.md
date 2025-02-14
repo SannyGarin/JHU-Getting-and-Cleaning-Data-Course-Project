@@ -428,10 +428,10 @@ This section is also in the section of "My work to the project" in README.md
 	     dim(testdata)  ##  (2947, 561)
 	     dim(joindata)  ## (10299, 561)
 	
-    ####### read and merge label-data set pair ##############################
-        trainlabel <- read.table("./UCI HAR Dataset/train/y_train.txt")
-        testlabel  <- read.table("./UCI HAR Dataset/test/y_test.txt")
-        joinlabel  <- rbind(trainlabel, testlabel)
+####### read and merge label-data set pair ##############################
+    trainlabel <- read.table("./UCI HAR Dataset/train/y_train.txt")
+    testlabel  <- read.table("./UCI HAR Dataset/test/y_test.txt")
+    joinlabel  <- rbind(trainlabel, testlabel)
 	
 	## cross-check dimensions: (observations/rows, variables/columns)
 	     dim(trainlabel) ## (7352, 1)
